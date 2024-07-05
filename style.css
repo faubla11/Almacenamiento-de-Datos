@@ -1,0 +1,108 @@
+.overlay-reg {
+  background: rgba(71, 202, 148, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  visibility: hidden;
+}
+
+.overlay-reg.active {
+  visibility: visible;
+}
+
+.container-reg {
+  background: #fff;
+  padding: 25px;
+  color: #004798;
+  justify-content: center;
+  width: 600px;
+  transition: 0.5s ease all;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.container-reg .close-reg {
+  background: none;
+  font-size: 25px;
+  display: block;
+  text-align: right;
+  color: #656565;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-top: -10px;
+}
+
+.container-reg .close-reg :hover {
+  color: #016be4;
+}
+
+.container-reg h3 {
+  text-align: center;
+  margin-top: -25px;
+  margin-bottom: 10px;
+  cursor: text;
+}
+
+.container-reg .inputs-reg {
+  display: flex;
+  width: 100%;
+}
+
+.container-reg .inputs-reg input,
+.container-reg .inputs-reg select {
+  width: 100%;
+  margin: 5px 0;
+  padding: 3px 0;
+  border: 2px solid #016be4;
+  line-height: 16px;
+  text-indent: 15px;
+  font-size: 16px;
+}
+
+.inputs-reg .colum1 {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.inputs-reg .colum2 {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.inputs-reg .colum2 .btn-register {
+  background: #016be4;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.inputs-reg .colum2 .btn-register:hover {
+  background: #004798;
+}
+
+.container-reg.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.warning {
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  font-weight: bolder;
+  margin: auto;
+  color: rgb(219, 58, 58);
+  padding: 20px 0;
+}
